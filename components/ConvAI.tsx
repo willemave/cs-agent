@@ -82,8 +82,7 @@ export function ConvAI() {
                         </CardTitle>
                     </CardHeader>
                     <div className={'flex flex-col gap-y-4 text-center'}>
-                        <div className={cn('relative w-48 h-48 mx-auto bg-background',
-                            isSpeaking ? 'animate-orb' : (conversation && 'animate-orb-slow'))}>
+                        <div className={'relative w-48 h-48 mx-auto bg-background'}>
                             <Image
                                 src="/support.jpg"
                                 alt="Support agent"
