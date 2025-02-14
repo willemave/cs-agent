@@ -1,7 +1,5 @@
 import type {Metadata} from "next";
 import "./globals.css";
-import Link from "next/link";
-import {ElevenLabsLogo, GithubLogo} from "@/components/logos";
 
 export const metadata: Metadata = {
     title: "ConvAI",
