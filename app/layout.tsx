@@ -1,6 +1,5 @@
 import type {Metadata} from "next";
 import "./globals.css";
-import {BackgroundWave} from "@/components/background-wave";
 import Link from "next/link";
 import {ElevenLabsLogo, GithubLogo} from "@/components/logos";
 
@@ -41,7 +40,6 @@ export default function RootLayout({children}: Readonly<{ children: React.ReactN
                 </div>
             </nav>
             {children}
-            <BackgroundWave/>
         </div>
         </body>
         </html>
