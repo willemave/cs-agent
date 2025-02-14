@@ -6,6 +6,7 @@ import {useState} from "react";
 import {Card, CardContent, CardHeader, CardTitle} from "@/components/ui/card";
 import {Conversation} from "@11labs/client";
 import {cn} from "@/lib/utils";
+import Image from "next/image";
 
 async function requestMicrophonePermission() {
     try {
@@ -81,10 +82,19 @@ export function ConvAI() {
                         </CardTitle>
                     </CardHeader>
                     <div className={'flex flex-col gap-y-4 text-center'}>
-                        <div className={cn('orb my-16 mx-12',
-                            isSpeaking ? 'animate-orb' : (conversation && 'animate-orb-slow'),
-                            isConnected ? 'orb-active' : 'orb-inactive')}
-                        ></div>
+                        <div className={cn('relative w-48 h-48 mx-auto bg-background',
+                            isSpeaking ? 'animate-orb' : (conversation && 'animate-orb-slow'))}>
+                            <Image
+                                src="/support.jpg"
+                                alt="Support agent"
+                                fill
+                                className="rounded-full object-cover"
+                                priority
+                            />
+                            <div className={cn('absolute inset-0 rounded-full border-4',
+                                isConnected ? 'border-primary' : 'border-muted')}
+                            ></div>
+                        </div>
 
 
                         <Button
