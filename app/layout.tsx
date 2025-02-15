@@ -21,7 +21,7 @@ export default function RootLayout({children}: Readonly<{ children: React.ReactN
                 <div className={"flex gap-4 justify-end"}>
                 </div>
             </nav>
-            <div className={"flex flex-col flex-grow w-full items-center font-bold justify-center text-3xl pt-36"}>Square Support Agent</div>
+            <div className={"flex flex-col flex-grow w-full items-center font-bold justify-center text-3xl pt-36"}>Square Restaurants Agent</div>
             {children}
         </div>
         </body>
